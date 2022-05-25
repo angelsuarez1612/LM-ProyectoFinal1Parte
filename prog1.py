@@ -3,7 +3,7 @@ import json
 import os
 
 url_base="https://exchange-rates.abstractapi.com/v1/"
-key="bd37a8482ef1452bb4a63e59900b08ae"
+key=os.environ["api_key"]
 moneda=input("Moneda a buscar: ")
 
 payload={'api_key':key,"base":moneda}
