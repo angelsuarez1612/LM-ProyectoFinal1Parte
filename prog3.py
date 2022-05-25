@@ -3,7 +3,7 @@ import json
 import os
 
 url_base="https://exchange-rates.abstractapi.com/v1/"
-key="bd37a8482ef1452bb4a63e59900b08ae"
+key=os.environ["api_key"]
 moneda1=input("Moneda a buscar: ")
 moneda2=input("Moneda a devolver: ")
 fecha=input("Introduce la fecha en la que buscar: (FORMATO YYY-MM-DD) ")
